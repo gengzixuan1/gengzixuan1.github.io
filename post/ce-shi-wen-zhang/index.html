@@ -4,90 +4,99 @@
     <meta charset="utf-8" >
 
 <title>测试文章 | 大黑耗子的窝</title>
-<meta name="description" content="一个差点让我废弃的网站">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://gengzixuan1.github.io/favicon.ico?v=1609941047047">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://gengzixuan1.github.io/favicon.ico?v=1609941127006">
 <link rel="stylesheet" href="https://gengzixuan1.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+
+    <meta name="description" content="第四单元  运动和力
+一  我们的小缆车
+1、由于（地球的吸引）物体都受到一个（向下）的拉力或压力，这个力就是重力。重力是物体由于地球吸引而受到的向下的拉力或压力。
+2.水往低处流，人从滑梯上往下滑，向上抛的物体最终要落回地面……..这些运..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://gengzixuan1.github.io">大黑耗子的窝</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://gengzixuan1.github.io">
+        <img src="https://gengzixuan1.github.io/images/avatar.png?v=1609941127006" class="site-logo">
+        <h1 class="site-title">大黑耗子的窝</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="/" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
+      
         
-      </ul>
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-</nav>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一个差点让我废弃的网站
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://gengzixuan1.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>测试文章</h1>
-            <p class="article-meta">
-              2021-01-06
-              
-            </p>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">测试文章</h2>
+            <div class="post-date">2021-01-06</div>
             
-            <div class="post-content">
+            <div class="post-content" v-pre>
               <p>第四单元  运动和力<br>
 一  我们的小缆车<br>
 1、由于（地球的吸引）物体都受到一个（向下）的拉力或压力，这个力就是重力。重力是物体由于地球吸引而受到的向下的拉力或压力。<br>
@@ -121,79 +130,32 @@
 22、赛车的设计特点：（1）要设计力量很大的发动机；（动力要大）（2）设计流线型车身，使阻力减到最低；（空气阻力要小）（3）车身重心很低，轮与轮之间的距离较宽，可以使行驶稳定；（不会翻车）。（4）轮胎很宽，可以增大摩擦力，避免打滑；（轮胎不打滑）</p>
 
             </div>
-          </article>
+            
+            
+
+            
+
+          </div>
+
         </div>
-        <div class="paper" data-aos="fade-in">
-          
-        </div>
-        
       </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://gengzixuan1.github.io/images/avatar.png?v=1609941047047" class="no-responsive avatar">
-    <div class="text-muted">一个差点让我废弃的网站</div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://gengzixuan1.github.io/post/ce-shi-wen-zhang/">测试文章</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://gengzixuan1.github.io/post/about/">关于</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-    </div>
-  </div>
-  <div class="paper">
-     | <a class="rss" href="https://gengzixuan1.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-
-
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
 <script type="application/javascript">
 
 AOS.init();
 
-hljs.initHighlightingOnLoad()
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
+
+
 
 
 
